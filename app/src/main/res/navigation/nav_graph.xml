@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.moviesapp.Fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_popularFragment"
+            app:destination="@id/popularFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_topRatedFragment"
+            app:destination="@id/topRatedFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_popularFragmentTV2"
+            app:destination="@id/popularFragmentTV2" />
+        <action
+            android:id="@+id/action_homeFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchMoviesSeries"
+            app:destination="@id/searchMoviesSeries" />
+        <action
+            android:id="@+id/action_homeFragment_to_upcomingFragment"
+            app:destination="@id/upcomingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_topRatedFragmentTV2"
+            app:destination="@id/topRatedFragmentTV2" />
+        <action
+            android:id="@+id/action_homeFragment_to_upcomingFragmentTV"
+            app:destination="@id/upcomingFragmentTV" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.example.moviesapp.MovieUI.PopularFragment"
+        android:label="Popular Movies"
+        tools:layout="@layout/fragment_popular" >
+        <action
+            android:id="@+id/action_popularFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topRatedFragment"
+        android:name="com.example.moviesapp.MovieUI.TopRatedFragment"
+        android:label="Top Rated"
+        tools:layout="@layout/fragment_toprated" >
+        <action
+            android:id="@+id/action_topRatedFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularFragmentTV2"
+        android:name="com.example.moviesapp.TVui.PopularFragmentTV"
+        android:label="Popular TV shows"
+        tools:layout="@layout/fragment_populartv" >
+        <action
+            android:id="@+id/action_popularFragmentTV2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.example.moviesapp.Fragments.MovieDetailsFragment"
+        android:label="Details" />
+    <fragment
+        android:id="@+id/searchMoviesSeries"
+        android:name="com.example.moviesapp.MovieUI.SearchMoviesSeries"
+        android:label="Search"
+        tools:layout="@layout/search_fragment" >
+        <action
+            android:id="@+id/action_searchMoviesSeries_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingFragment"
+        android:name="com.example.moviesapp.MovieUI.UpcomingFragment"
+        android:label="Upcoming Movies"
+        tools:layout="@layout/fragment_upcoming" >
+        <action
+            android:id="@+id/action_upcomingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topRatedFragmentTV2"
+        android:name="com.example.moviesapp.TVui.TopRatedFragmentTV"
+        android:label="Top Rated TV Shows"
+        tools:layout="@layout/fragment_topratedtv" >
+        <action
+            android:id="@+id/action_topRatedFragmentTV2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingFragmentTV"
+        android:name="com.example.moviesapp.TVui.PopularPersonsFragment"
+        android:label="Popular Actors"
+        tools:layout="@layout/upcoming_tv" >
+        <action
+            android:id="@+id/action_upcomingFragmentTV_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

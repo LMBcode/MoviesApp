@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"
+            />
+
+    </group>
+    <group
+        android:id="@+id/group0"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/searchMoviesSeries"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Search Movies"
+            />
+
+    </group>
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:title="Movie">
+            <menu>
+                <item
+                    android:id="@+id/popularFragment"
+                    android:icon="@drawable/trending"
+                    android:title="Popular"
+                    />
+        <item
+            android:id="@+id/topRatedFragment"
+            android:icon="@drawable/toprated"
+            android:title="Top Rated"
+           />
+
+        <item
+            android:id="@+id/upcomingFragment"
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="Upcoming"
+           />
+        </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+
+            android:title="TV Shows">
+            <menu>
+                <item
+                    android:id="@+id/popularFragmentTV2"
+                    android:icon="@drawable/trending"
+                    android:title="Popular"
+                    />
+
+                <item
+                    android:id="@+id/topRatedFragmentTV2"
+                    android:icon="@drawable/toprated"
+                    android:title="Top Rated"
+                    />
+            </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/group3">
+        <item
+            android:title="Popular Actors"
+            android:id="@+id/upcomingFragmentTV">
+        </item>
+    </group>
+
+</menu>
